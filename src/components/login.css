@@ -1,0 +1,17 @@
+.formcontainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputtype{
+    display: flex;
+    margin: 20px;
+
+}
+.inputtype input {
+    margin: 5px;
+}
+.formcontainer button{
+   width: 10%;
+   margin: 10px;
+}
