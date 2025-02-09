@@ -1,61 +1,86 @@
-.App {
-  text-align: center;
-  
-}
-button{
-  color: rgb(255, 72, 0);
-  height: 50px;
-  width: 50px;
-  background-color: rgb(43, 226, 98);
-  border:  red solid 2px;
-  text-align: end;
-  margin-right: 20px;
-}
-
-#container{
-  color: rgb(255, 72, 0);
-  height: 50px;
-  width: 50px;
-  background-color: rgb(43, 226, 98);
-}
-
-
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: Arial, sans-serif;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-.flexbox{
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  padding: 5px;
-  margin: 10px;
-  
+  height: 100vh;
+  background: #f4f4f4;
 }
+
 .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  height: 100vh;
-  background-color: #f3f4f6;
+  width: 700px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.box {
-  width: 80px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: steelblue;
+.left-panel {
+  background: #002ead;
   color: white;
-  font-size: 20px;
-  border-radius: 8px;
+  width: 40%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.right-panel {
+  background: white;
+  width: 60%;
+  padding: 40px;
+}
+
+.right-panel h2 {
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.google-login {
+  background: white;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.google-login:hover {
+  background: #f8f8f8;
 }
